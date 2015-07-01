@@ -1,22 +1,129 @@
 <div id="back-img">
 	
-	<div class="title">
-		<h1>Milie<span class="u">u</span></h1>
-	</div>
+	<div class="row">
+	  <div class="col-md-4"></div>
+	  <div class="col-md-4">
+		<div class="title  vertical-center">
+			<h1>MILIE<span class="u">U</span></h1>
 
-	<div class="signup">
-		<%= form_for @user, url: {action: "create"}, html: {class: "form"} do |f| %>
-		  <p>Stay tuned</p>
-		  <%= f.text_field :email, placeholder: "EMAIL", class: "signup-box" %>
-		  <%= f.submit "Sign Up", hidden: true %>
-			<h1 id="timer" style="display: none;"></h1>
-		<% end %>
+			<h4>
+				<span class="tags">ACCESS &#183; </span>
+				<span class="tags">PARTICIPATE &#183; </span>
+				<span class="tags">COLLABORATE &#183; </span> 
+				<span class="tags">DESIGN &#183; </span> 
+				<span class="tags">EMPOWER</span>
+			</h4>
+
+			<hr>
+
+			<button type="button" class="btn btn-hg btn-primary" data-toggle="modal" data-target=".ex-modal-lg">Learn More</button>
+		</div>
+
+
+
+	  </div>
+	  <div class="col-md-4">
+
+		<div id="right-panel">
+			<div id="count-down">
+			      <div id="countdown">
+			        <div class="days"><span id="days"></span> <ins>/</ins> <em>days /</em></div>
+			        <div class="hours"><span id="hours"></span> <ins>/</ins> <em>hours /</em></div>
+			        <div class="minutes"><span id="minutes"></span> <ins>/</ins><em>min /</em></div>
+			        <div class="seconds"><span id="seconds"></span><em>sec</em> </div>
+			      </div>
+			</div>
+
+		</div>
+
+		<div class="logo">
+			<a href="http://atelierruderal.com/" target="_blank"><img src="/assets/ar5black-01.png" alt="logo-black" id="logo-img"></a>
+		</div>
 		
-				
+
+	  </div>
+
+
 	</div>
 
-	
+<!--  -->
 
 </div>
 
+
+
+
+<div class="modal fade ex-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-lg">
+     
+      <div class="modal-body">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="summary">
+		<!-- 	<p class="modal-summary">
+			When wandering through the city, the abandoned, vacant and in-development sites are everywhere. Such spaces are highly prized and diminishing fast. The challenges that cities and inhabitants face are numerous. Spaces capable of new development remain sites of possibility and opportunity to design and construct innovative architectural and urban solutions that respond to what a city needs. 
+			</p> -->
+			<p class="modal-summary">
+			The problem in designing and constructing the future city remains the disconnection between people, urban developers and city officials. This includes achieving more predictability, transparency and accountability in the planning and development process, alongside engaging individuals and communities to be involved. 
+			</p>
+			
+			<p class="modal-summary">
+			By providing access to information and demonstrating how public input affects design and construction, <b>MILIEU</b> facilitates collaborative and creative urban transformation and empowers people to be part of the city in which they live.
+			</p> 
+				
+			<hr>
+			
+			<div id="app-notification">
+				
+			</div>
+			
+			<hr>
+			
+			<div class="modal-summary-wrapper">
+			<p class="modal-summary">
+				<p class="modal-summary">
+					As part of the People's Choice Awards for the Cities of Tomorrow competition hosted by Ontario's Big City Mayors - "Don't let the city pass you by" and &nbsp;
+
+					<br>
+
+					<a href="http://wshe.es/p9OoYEH1" target="_blank" class="vote-btn"><button class="btn btn-lg btn-primary">VOTE MILIEU #80934</button></a>
+
+
+				</p>
+
+			<!-- 	<b>MILIEU</b> starts the long overdue conversation by enabling people to be involved and contribute in the urban development and planning process. It engages those who may not otherwise be informed of new urban development and provides them with the resources to stay informed. 
+				</p>
+				<p class="modal-summary">
+				<b>MILIEU</b> creates transparency in development and planning by fostering a dialogue between people, urban developers and city officials before building happens.
+				</p>
+				-->
+				
+			</div>
+			
+			<hr>
+			
+			<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+
+				<%= f.text_field :email, placeholder: "email", id: "inputEmail", class:"form-control" %>
+				
+				<br>
+
+	        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
+
+		    <% end %>
+		</div>
+
+
+
+
+
+      </div>
+
+			
+        
+		
+
+    </div>
+  </div>
+</div>
 
