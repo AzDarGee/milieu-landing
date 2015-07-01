@@ -1,0 +1,70 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "sans-serif";
+  background: #444444;
+  overflow-x: hidden;
+}
+
+#back-img {
+	background: url(/assets/ny-filtered.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.title {
+	float: left;
+	display: inline-block;
+	background-color: rgba(206, 206, 206, 0.8);
+	padding: 1em;
+	color: #fff;
+	h1 {
+		font-size: 6em;
+		.u {
+			color: rgb(247, 172, 7);
+		}
+	}
+}
+
+.signup {
+	float: right;
+	display: inline-block;
+	height: 100vh;
+	.form {
+		position: relative;
+		top: 50%;	
+		padding: 10px;
+		background-color: rgba(137, 137,137, 0.7);
+		margin-right: 15em;
+		border-radius: 15px;
+		p {
+			font-size: 2.5em;
+			font-weight: bold;
+			color: #fff;
+		}
+		.signup-box {
+	    position: relative;
+	    left: 0;
+	    outline: none;
+	    border: 1px solid #cdcdcd;
+	    border-color: rgba(0,0,0,.15);
+	    background-color: white;
+	    font-size: 3em;
+	    border-radius: 3px;
+		}
+	}
+
+	
+}

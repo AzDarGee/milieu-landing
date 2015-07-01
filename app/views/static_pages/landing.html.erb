@@ -1,0 +1,22 @@
+<div id="back-img">
+	
+	<div class="title">
+		<h1>Milie<span class="u">u</span></h1>
+	</div>
+
+	<div class="signup">
+		<%= form_for @user, url: {action: "create"}, html: {class: "form"} do |f| %>
+		  <p>Stay tuned</p>
+		  <%= f.text_field :email, placeholder: "EMAIL", class: "signup-box" %>
+		  <%= f.submit "Sign Up", hidden: true %>
+			<h1 id="timer" style="display: none;"></h1>
+		<% end %>
+		
+				
+	</div>
+
+	
+
+</div>
+
+
