@@ -40,7 +40,7 @@ body {
 }
 
 #back-img {
-	background: url(/assets/ny-filtered.jpg) no-repeat center;
+	background: url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/optimized.jpg) no-repeat center;
 	background-size: cover;
 	position: fixed;
 	bottom: 0;
@@ -51,7 +51,7 @@ body {
 }
 
 #app-notification {
-	background: url(/assets/app_notification.png) no-repeat center;
+	background: url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/app_notification.png) no-repeat center;
 	height: 185px;
 	width: 100%;
 	background-size: cover;
@@ -202,7 +202,7 @@ body {
 
 .logo:hover {
 	img {
-		content: url('/assets/ar5white-01-01.png');
+		content: url('https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png');
 	}
 	background-color: rgba(0,0,0,0.7);
 }
@@ -216,4 +216,7 @@ body {
 	display: inline-block;
 	height: 2.5em;
 	font-size: 1em;
+}
+.alert {
+	z-index: 1050;
 }

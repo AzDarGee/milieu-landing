@@ -1,0 +1,7 @@
+<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+
+	<%= f.text_field :email, placeholder: "email", id: "inputEmail", class:"form-control" %>				
+	&nbsp;
+	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
+
+<% end %>

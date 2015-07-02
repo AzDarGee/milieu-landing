@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
     if @user.save
       redirect_to root_path, notice: 'Your account was successfully created.'
     else
-      redirect_to root_path, notice: "ASkjhASKJD"
+      redirect_to root_path, alert: "Try again"
     end
   end
 

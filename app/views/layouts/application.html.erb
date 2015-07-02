@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<% if flash[:notice] %>
+		<div class="alert alert-info close"><%= notice %></div>
+	<% end %>
+	<% if flash[:alert] %>
+		<div class="alert alert-info close"><%= alert %></div>
+	<% end %>
 <div class="container-fluid">
+	
+	
+
 	<%= yield %>
 </div>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
