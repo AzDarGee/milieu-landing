@@ -45,7 +45,7 @@ $(document).on("page:change",function (event) {
         var SPLASH_PAGE = 'splash-page-cookie';
         $go = Cookies.get(SPLASH_PAGE);
         if ($go == null) {
-            Cookies.set(SPLASH_PAGE, 'WHATSGUD', { expires: 1 });
+            Cookies.set(SPLASH_PAGE, 'WHATSGUD');
                 $('#TheIntro').animate({opacity: 0.01}, 4000, function (event) {
                 $(this).hide();
                 $('#back-img').fadeIn(500);             
