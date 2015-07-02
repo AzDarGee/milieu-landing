@@ -39,12 +39,24 @@ $(document).on('page:change', function(){
     
 });
 
-$(document).ready(function () {
+$(document).on("page:change",function (event) {
 
-    $('#TheIntro').animate({opacity: 0.01}, 4000, function () {
+    $(function() {
+        var SPLASH_PAGE = 'splash-page-cookie';
+        $go = Cookies.get(SPLASH_PAGE);
+        if ($go == null) {
+            Cookies.set(SPLASH_PAGE, 'WHATSGUD', { expires: 1 });
+                $('#TheIntro').animate({opacity: 0.01}, 4000, function (event) {
+                $(this).hide();
+                $('#back-img').fadeIn(500);             
 
-        $(this).hide();
-        $('#back-img').fadeIn(500);             
+            });  
+        }
+        else {
+            $('#TheIntro').hide();
+            $('#back-img').fadeIn(500);
+        }
+    });
 
-    });   
+         
 });

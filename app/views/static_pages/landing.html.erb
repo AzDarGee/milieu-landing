@@ -89,9 +89,9 @@
 					As part of the People's Choice Awards for the Cities of Tomorrow competition hosted by Ontario's Big City Mayors - "Don't let the city pass you by" and &nbsp;
 
 					<br>
-
-					<a href="http://wshe.es/p9OoYEH1" target="_blank" class="vote-btn"><button class="btn btn-lg btn-primary">VOTE MILIEU #80934</button></a>
-
+					<p class="vote-btn">
+						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-lg btn-primary">VOTE MILIEU #80934</button></a>
+					</p>
 
 				</p>
 
@@ -108,10 +108,8 @@
 			
 			<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
 
-				<%= f.text_field :email, placeholder: "email", id: "inputEmail", class:"form-control" %>
-				
-				<br>
-
+				<%= f.text_field :email, placeholder: "email", id: "inputEmail", class:"form-control" %>				
+				&nbsp;
 	        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
 
 		    <% end %>

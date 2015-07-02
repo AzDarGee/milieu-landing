@@ -33,7 +33,7 @@ body {
 	border-radius: 3px;
 	overflow-y: hidden;
 	background-color: white;
-
+	display: none;
 	h1 {
 		font-size: 10em;
 	}
@@ -194,7 +194,7 @@ body {
 	position: absolute;
 	bottom: 10px;
 	right: 20px;
-	// background-color: rgba(0,0,0, 0.7);
+	background-color: rgba(255,255,255, 0.7);
 	img {
 		width: 140px;
 	}
@@ -204,8 +204,16 @@ body {
 	img {
 		content: url('/assets/ar5white-01-01.png');
 	}
+	background-color: rgba(0,0,0,0.7);
 }
 
 .vote-btn {
 	text-align: center;
+}
+
+.form-control {
+	width: 20em;
+	display: inline-block;
+	height: 2.5em;
+	font-size: 1em;
 }
