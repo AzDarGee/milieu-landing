@@ -22,6 +22,23 @@ body {
   overflow-x: hidden;
 }
 
+#TheIntro {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-60%);
+	-webkit-transform: translate(-50%,-60%);
+	transform: translate(-50%, -60%);
+	padding: 3em;
+	border-radius: 3px;
+	overflow-y: hidden;
+	background-color: white;
+
+	h1 {
+		font-size: 10em;
+	}
+}
+
 #back-img {
 	background: url(/assets/ny-filtered.jpg) no-repeat center;
 	background-size: cover;
@@ -30,6 +47,7 @@ body {
 	right: 0;
 	left: 0;
 	top: 0;
+	display: none;
 }
 
 #app-notification {
@@ -54,81 +72,75 @@ body {
 		font-size: 5em;
 		.u {
 			color: rgb(247, 172, 7);
-			border-top: 2px solid #fff;
+			border-top: 3px solid #fff;
 			margin: 0;
 		}
 	}
 }
 
-#right-panel {
-	float: right;
-	clear: both;
+
+#right-col {
 	height: 100vh;
-	display: inline-block;
-	margin-right: 2em;
-	#count-down {
-		
-		#countdown {
-			padding-top: 1em;
-			color: #fff;
-		}
-
-		#countdown div {
-			float: left;
-			font-family: 'ONYX', Arial, sans-serif;
-			font-size: 50px;
-			line-height: 38px;	
-		}
-
-		#countdown em {
-			display: block;
-			font-size: 34px;
-			text-align: right;
-			padding: 0 10px 0 0;
-		}
-
-		#countdown ins {
-			color: #ffbd38;
-			text-decoration: none;
-		}
-
-		#countdown div.days span {
-			width: 50px;
-			display: inline-block;
-			text-align: right;
-		}
-
-		#countdown div.hours span {
-			padding: 0 14px;
-		}
-
-		#countdown div.hours em {
-			text-align: left;
-		}
-
-		#countdown div.minutes span {
-			padding: 0 0 0 7px;
-		}
-
-		#countdown div.minutes em {
-			text-align: left;
-			margin-left: -10px;
-		}
-
-		#countdown div.seconds span {
-			padding-left: 10px;
-		}
-
-		#countdown div.seconds em {
-			text-align: left;
-			margin-left: -10px;
-		}
-
-
+	float: right;
+	padding-right: 1em;
+	
+	#countdown {
+		padding-top: 1em;
+		color: #fff;
 	}
 
-	
+	#countdown div {
+		float: left;
+		font-family: 'ONYX', Arial, sans-serif;
+		font-size: 50px;
+		line-height: 38px;	
+	}
+
+	#countdown em {
+		display: block;
+		font-size: 34px;
+		text-align: right;
+		padding: 0 10px 0 0;
+	}
+
+	#countdown ins {
+		color: #ffbd38;
+		text-decoration: none;
+	}
+
+	#countdown div.days span {
+		width: 50px;
+		display: inline-block;
+		text-align: right;
+	}
+
+	#countdown div.hours span {
+		padding: 0 14px;
+	}
+
+	#countdown div.hours em {
+		text-align: left;
+	}
+
+	#countdown div.minutes span {
+		padding: 0 0 0 7px;
+	}
+
+	#countdown div.minutes em {
+		text-align: left;
+		margin-left: -10px;
+	}
+
+	#countdown div.seconds span {
+		padding-left: 10px;
+	}
+
+	#countdown div.seconds em {
+		text-align: left;
+		margin-left: -10px;
+	}
 }
+
 
 #myModal {
 	max-width: 85%;
@@ -145,9 +157,12 @@ body {
 }
 
 .vertical-center {
-  position: relative;
-  // top: 50%;
-  transform: translateY(+60%);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-60%);
+	-webkit-transform: translate(-50%,-60%);
+	transform: translate(-50%, -60%);
 }
 
 .tags {

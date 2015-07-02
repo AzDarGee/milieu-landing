@@ -35,12 +35,16 @@ $(document).on('page:change', function(){
     
     $('div#countdown').countdown(toDate, callback);
     
-    /* Google Map */
-    $('#subscribe').on('shown', function () {
-        var gMap = $('#map_canvas').gmap({'center': '27.7166667,85.3166667', 'zoom': 8, 'disableDefaultUI': true, 'callback': function() {
-    		this.addMarker({'position': '27.7166667,85.3166667' });
-            this.addMarker({'position': '27.672887,85.430031' });
-    	}});
-    });
+  
     
+});
+
+$(document).ready(function () {
+
+    $('#TheIntro').animate({opacity: 0.01}, 4000, function () {
+
+        $(this).hide();
+        $('#back-img').fadeIn(500);             
+
+    });   
 });
