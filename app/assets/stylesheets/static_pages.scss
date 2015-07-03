@@ -91,68 +91,67 @@ body {
 }
 
 
-#right-col {
-	height: 100vh;
-	float: right;
-	padding-right: 1em;
+
 	
-	#countdown {
-		font-family: "ONYX";
-		padding-top: 1em;
-		color: rgba(0,0,0,0.6);
-	}
-
-	#countdown div {
-		float: left;
-		font-family: 'ONYX', Arial, sans-serif;
-		font-size: 50px;
-		line-height: 38px;	
-	}
-
-	#countdown em {
-		display: block;
-		font-size: 34px;
-		text-align: right;
-		padding: 0 10px 0 0;
-	}
-
-	#countdown ins {
-		color: #ffbd38;
-		text-decoration: none;
-	}
-
-	#countdown div.days span {
-		width: 50px;
-		display: inline-block;
-		text-align: right;
-	}
-
-	#countdown div.hours span {
-		padding: 0 14px;
-	}
-
-	#countdown div.hours em {
-		text-align: left;
-	}
-
-	#countdown div.minutes span {
-		padding: 0 0 0 7px;
-	}
-
-	#countdown div.minutes em {
-		text-align: left;
-		margin-left: -10px;
-	}
-
-	#countdown div.seconds span {
-		padding-left: 10px;
-	}
-
-	#countdown div.seconds em {
-		text-align: left;
-		margin-left: -10px;
-	}
+#countdown {
+	font-family: "ONYX";
+	padding-top: 1em;
+	margin-right: 2em;
+	color: rgba(0,0,0,0.6);
+	float: right;
 }
+
+#countdown div {
+	float: left;
+	font-family: 'ONYX', Arial, sans-serif;
+	font-size: 50px;
+	line-height: 38px;	
+}
+
+#countdown em {
+	display: block;
+	font-size: 34px;
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+
+#countdown ins {
+	color: #ffbd38;
+	text-decoration: none;
+}
+
+#countdown div.days span {
+	width: 50px;
+	display: inline-block;
+	text-align: right;
+}
+
+#countdown div.hours span {
+	padding: 0 14px;
+}
+
+#countdown div.hours em {
+	text-align: left;
+}
+
+#countdown div.minutes span {
+	padding: 0 0 0 7px;
+}
+
+#countdown div.minutes em {
+	text-align: left;
+	margin-left: -10px;
+}
+
+#countdown div.seconds span {
+	padding-left: 10px;
+}
+
+#countdown div.seconds em {
+	text-align: left;
+	margin-left: -10px;
+}
+
 
 
 #myModal {
@@ -212,7 +211,7 @@ body {
 
 .logo:hover {
 	img {
-		content: url('https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png');
+		content: url('https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5black-01.png');
 	}
 	// background-color: rgba(0,0,0,0.7);
 }
