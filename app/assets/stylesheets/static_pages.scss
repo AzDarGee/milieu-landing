@@ -156,7 +156,7 @@ body {
 
 
 #myModal {
-	max-width: 85%;
+	// max-width: 85%;
 }
 
 .summary {
@@ -199,9 +199,6 @@ body {
 	background-color: rgba(248, 167, 153,0.6);
 }
 
-.col-md-4 {
-	position: relative;
-}
 
 .logo {
 	position: absolute;
@@ -225,7 +222,7 @@ body {
 }
 
 .form-control {
-	width: 20em;
+	width: 50%;
 	display: inline-block;
 	height: 2.5em;
 	font-size: 1em;
