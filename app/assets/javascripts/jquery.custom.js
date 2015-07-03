@@ -5,7 +5,7 @@ $(document).on('page:change', function(){
     // });
 
     /* Tooltip */
-    $('#social-icons li a').tooltip();
+    // $('#social-icons li a').tooltip();
     
     /* Counter */
     var finished = false;
@@ -35,28 +35,32 @@ $(document).on('page:change', function(){
     
     $('div#countdown').countdown(toDate, callback);
     
-  
+    $('#flash').on('click', function() {
+        $(this).fadeOut(500);
+    });
     
 });
 
-$(document).on("page:change",function (event) {
 
-    $(function() {
-        var SPLASH_PAGE = 'splash-page-cookie';
-        $go = Cookies.get(SPLASH_PAGE);
-        if ($go == null) {
-            Cookies.set(SPLASH_PAGE, 'WHATSGUD');
-                $('#TheIntro').animate({opacity: 0.01}, 4000, function (event) {
-                $(this).hide();
-                $('#back-img').fadeIn(500);             
+// SPASH PAGE - WITH SESSION COOKIES
+// $(document).on("page:change",function (event) {
 
-            });  
-        }
-        else {
-            $('#TheIntro').hide();
-            $('#back-img').fadeIn(500);
-        }
-    });
+//     $(function() {
+//         var SPLASH_PAGE = 'splash-page-cookie';
+//         $go = Cookies.get(SPLASH_PAGE);
+//         if ($go == null) {
+//             Cookies.set(SPLASH_PAGE, 'WHATSGUD');
+//                 $('#TheIntro').animate({opacity: 0.01}, 4000, function (event) {
+//                 $(this).hide();
+//                 $('#back-img').fadeIn(500);             
+
+//             });  
+//         }
+//         else {
+//             $('#TheIntro').hide();
+//             $('#back-img').fadeIn(500);
+//         }
+//     });
 
          
-});
+// });

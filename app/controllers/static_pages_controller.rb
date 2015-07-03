@@ -6,9 +6,9 @@ class StaticPagesController < ApplicationController
   def create
   	@user = StaticPage.new(static_pages_params)
     if @user.save
-      redirect_to root_path, notice: 'Your account was successfully created.'
+      redirect_to root_path, notice: "Thanks! You will recieve an invite to the launch party."
     else
-      redirect_to root_path, alert: "Try again"
+      redirect_to root_path, alert: "Invalid email, try again."
     end
   end
 

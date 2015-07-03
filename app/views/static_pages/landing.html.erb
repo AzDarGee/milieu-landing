@@ -1,6 +1,6 @@
-<div id="TheIntro">
+<!-- <div id="TheIntro">
 	<h1>MILIEU</h1>
-</div>
+</div> -->
 
 <div id="back-img">
 	
@@ -22,8 +22,26 @@
 
 			<hr>
 
-			<button type="button" class="btn btn-hg btn-primary" data-toggle="modal" data-target=".ex-modal-lg">Learn More</button>
+			<button type="button" class="btn btn-hg btn-primary" data-toggle="modal" data-target=".ex-modal-lg">VOTE HERE</button>
+			
+			<div id="flash">
+				<% if flash[:notice] %>
+					<%= notice %>
+				<% end %>
+				<% if flash[:alert] %>
+					<%= alert %>
+				<% end %>
+			</div>
+
 		</div>
+
+		
+
+		
+
+
+
+
 
 	  </div>
 
@@ -67,7 +85,7 @@
 		<!-- 	<p class="modal-summary">
 			When wandering through the city, the abandoned, vacant and in-development sites are everywhere. Such spaces are highly prized and diminishing fast. The challenges that cities and inhabitants face are numerous. Spaces capable of new development remain sites of possibility and opportunity to design and construct innovative architectural and urban solutions that respond to what a city needs. 
 			</p> -->
-			<p class="modal-summary">
+		<!-- 	<p class="modal-summary">
 			The problem in designing and constructing the future city remains the disconnection between people, urban developers and city officials. This includes achieving more predictability, transparency and accountability in the planning and development process, alongside engaging individuals and communities to be involved. 
 			</p>
 			
@@ -81,16 +99,15 @@
 				
 			</div>
 			
-			<hr>
+			<hr> -->
 			
 			<div class="modal-summary-wrapper">
 			<p class="modal-summary">
 				<p class="modal-summary">
-					As part of the People's Choice Awards for the Cities of Tomorrow competition hosted by Ontario's Big City Mayors - "Don't Let the City Pass You By"
-
+					Don't let the city pass you by and go to the <b>People's Choice Awards</b> hosted by Ontario's Big City Mayor's to learn more and vote for <b>MILIEU</b>.
 					<br>
 					<p class="vote-btn">
-						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-lg btn-primary">VOTE MILIEU #80934</button></a>
+						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-hg btn-primary">VOTE MILIEU #80934</button></a>
 					</p>
 
 				</p>
@@ -110,7 +127,7 @@
 
 			<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
 
-				<%= f.text_field :email, placeholder: "email", id: "inputEmail", class:"form-control" %>				
+				<%= f.text_field :email, placeholder: "EMAIL", id: "inputEmail", class:"form-control" %>				
 				&nbsp;
 	        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
 
