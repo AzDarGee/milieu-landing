@@ -10,9 +10,9 @@
 }
 
 html, body {
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+  // height: 100vh;
+  // padding: 0;
+  // margin: 0;
   text-align: center;
 }
 
@@ -162,7 +162,7 @@ body {
 .summary {
 	// max-height: 300px;
 	// overflow-y: auto;
-	padding: 40px;
+	padding: 1.5em;
 }
 
 .modal-summary {
@@ -185,7 +185,7 @@ body {
 }
 
 .modal-summary-wrapper {
-	padding: 5px 15px 0px 15px;
+	// padding: 5px 15px 0px 15px;
 	// background-color: rgba(248, 169, 155,0.2);
 	// background-color: rgba(247,172,7,0.6);
 	border-radius: 2px;
