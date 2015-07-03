@@ -64,7 +64,6 @@ body {
 }
 
 .title {
-	font-family: "ONYX";
 	background-color: rgba(206, 206, 206, 0.8);
 	padding: 0 4em 2em 4em;
 	color: #fff;
@@ -72,6 +71,7 @@ body {
 	display: inline-block;
 	h1 {
 		font-size: 6em;
+		font-family: "ONYX";
 		.u {
 			color: rgb(247, 172, 7);
 			border-top: 3px solid #fff;
