@@ -35,11 +35,16 @@ $(document).on('page:change', function(){
     
     $('div#countdown').countdown(toDate, callback);
     
+    // Flash link
     $('#flash').on('click', function() {
         $(this).fadeOut(500);
     });
+
+    // Image carasol
+ 
     
 });
+
 
 
 // SPASH PAGE - WITH SESSION COOKIES

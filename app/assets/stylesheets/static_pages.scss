@@ -40,8 +40,19 @@ body {
 // 	}
 // }
 
-#back-img {
+#back-img1 {
 	background: url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
+	background-size: cover;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	// display: none;
+}
+
+#back-img2 {
+	background: url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0081-min.jpg) no-repeat center;
 	background-size: cover;
 	position: fixed;
 	bottom: 0;
