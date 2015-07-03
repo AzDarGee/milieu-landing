@@ -1,0 +1,132 @@
+<!-- <div id="TheIntro">
+	<h1>MILIEU</h1>
+</div> -->
+
+<div id="back-img1">
+	
+	<div class="row">
+	  
+	  <div class=".col-xs-4 .col-sm-4"></div>
+	  
+	  <div class=".col-xs-4 .col-sm-4 vertical-center">
+		<div class="title animated flipInX">
+			<h1><span class="m">M</span>ILIE<span class="u">U</span></h1>
+
+			<h4>
+				<span class="tags">ACCÈS &#183; </span>
+				<span class="tags">PARTICIPER &#183; </span>
+				<span class="tags">COLLABORER &#183; </span> 
+				<span class="tags">CONCEPTION &#183; </span> 
+				<span class="tags">HABILITER</span>
+			</h4>
+
+			<hr>
+
+			<button type="button" class="btn btn-hg btn-primary" id="learn-more" data-toggle="modal" data-target=".ex-modal-lg">Apprendre Plus</button>
+			
+			<div id="flash">
+				<% if flash[:notice] %>
+					<%= notice %>
+				<% end %>
+				<% if flash[:alert] %>
+					<%= alert %>
+				<% end %>
+			</div>
+
+		</div>
+
+
+	  </div>
+
+	  <div class=".col-xs-4 .col-sm-4">
+
+		
+		
+	      <div id="countdown">
+	        <div class="days"><span id="days"></span> <ins>/</ins><em>jours &#183;</em></div>
+	        <div class="hours"><span id="hours"></span> <ins>/</ins><em>heures &#183;&nbsp;</em></div>
+	        <div class="minutes"><span id="minutes"></span> <ins>/</ins><em>min &#183;</em></div>
+	        <div class="seconds"><span id="seconds"></span><em>sec</em> </div>
+	      </div>
+		
+	
+
+		<div class="logo">
+			<a href="http://atelierruderal.com/" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png" alt="logo-white" id="logo-img"></a>
+		</div>
+		
+
+	  </div>
+
+
+	</div>
+
+
+
+</div>
+
+
+<!-- MODAL -->
+
+<div class="modal fade ex-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="summary">
+			
+			
+			<div class="modal-summary-wrapper">
+			
+				<p class="modal-summary">
+			 		Le problème dans la conception et la construction de la future ville reste la déconnexion entre personnes, des urbanistes et des responsables de la ville . <b>MILIEU</b> facilite la transformation urbaine collaborative et créative et permet aux gens de faire partie de la ville dans laquelle ils vivent.
+			 	</p>
+
+				<hr>
+
+				<p class="modal-summary">
+					Pour le Prix du Choix du Public du concours Cities of Tomorrow organisé par Ontario’s Big City Mayors,
+Ne laissez pas la ville vous glisser entre les doigts et votez <b>MILIEU</b>.
+					<br>
+					<p class="vote-btn">
+						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-hg btn-primary">VOTEZ MILIEU #80934</button></a>
+					</p>
+
+				</p>
+
+				
+				
+				
+			
+			
+			<hr>
+			
+				
+
+			<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+
+				<%= f.text_field :email, placeholder: "EMAIL", id: "inputEmail", class:"form-control" %>				
+				&nbsp;
+	        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
+
+		    <% end %>
+		</div>
+
+
+
+
+
+      </div>
+
+			
+        
+		
+
+    </div>
+  </div>
+</div>
+
+
+
+

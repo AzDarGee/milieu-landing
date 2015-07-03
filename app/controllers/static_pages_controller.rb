@@ -3,6 +3,13 @@ class StaticPagesController < ApplicationController
   	@user = StaticPage.new
   end
 
+  def french
+    @user = StaticPage.new
+  end
+
+  def splash
+  end
+
   def create
   	@user = StaticPage.new(static_pages_params)
     if @user.save
