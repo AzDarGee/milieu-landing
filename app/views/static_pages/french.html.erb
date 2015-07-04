@@ -6,9 +6,9 @@
 	
 	<div class="row">
 	  
-	  <div class=".col-xs-4 .col-sm-4"></div>
+	  <div class=""></div>
 	  
-	  <div class=".col-xs-4 .col-sm-4 vertical-center">
+	  <div class="vertical-center">
 		<div class="title animated flipInX">
 			<h1><span class="m">M</span>ILIE<span class="u">U</span></h1>
 
@@ -38,7 +38,7 @@
 
 	  </div>
 
-	  <div class=".col-xs-4 .col-sm-4">
+	  <div class="">
 
 		
 		
@@ -90,7 +90,7 @@
 ne laissez pas la ville vous glisser entre les doigts. Votez <b>MILIEU</b>.
 					<br>
 					<p class="vote-btn">
-						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-hg btn-primary">VOTEZ MILIEU #80934</button></a>
+						<a href="http://wshe.es/p9OoYEH1" target="_blank"><button class="btn btn-primary">VOTEZ MILIEU #80934</button></a>
 					</p>
 
 				</p>
@@ -103,14 +103,17 @@ ne laissez pas la ville vous glisser entre les doigts. Votez <b>MILIEU</b>.
 			<hr>
 			
 				
+			<div class="row">
+			<div></div>
+				<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
 
-			<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
+					<%= f.text_field :email, placeholder: "EMAIL", id: "inputEmail", class:"form-control" %>				
+					&nbsp;
+		        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
 
-				<%= f.text_field :email, placeholder: "EMAIL", id: "inputEmail", class:"form-control" %>				
-				&nbsp;
-	        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
+			    <% end %>
 
-		    <% end %>
+		    </div>
 		</div>
 
 
