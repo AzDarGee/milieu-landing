@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   resources :static_pages, only: [:create]
   
-  root 'static_pages#splash'
+  root 'static_pages#landing'
   get 'french', to: 'static_pages#french'
 end
