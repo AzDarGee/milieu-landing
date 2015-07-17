@@ -12,13 +12,17 @@
    margin-right: auto;
    max-width: none;
    text-align: center;
-
  }
  
 body{
-   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
-   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
    background-size: cover;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
  }
  
  .reveal-modal .columns img{
@@ -206,7 +210,7 @@ label{
 }
 
 .lang {
-    margin-left: 50px; 
+    margin-left: 10px; 
     color: #fff;
     position: relative;
     z-index: 1000;
@@ -220,9 +224,14 @@ label{
 }
 
 body{
-   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
-   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
    background-size: cover;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
  }
 
 } 
@@ -257,9 +266,14 @@ body{
 }
 
 body{
-   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
-   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg) no-repeat center;
    background-size: cover;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   top: 0;
  }
  
  .body_text p {
