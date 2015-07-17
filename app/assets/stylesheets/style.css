@@ -1,0 +1,337 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'ONYX';
+    src: url(font-path('ONYX.ttf')) format ('truetype');
+    font-weight: normal;
+}
+
+ .fullwidth{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: none;
+   text-align: center;
+
+ }
+ 
+body{
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background-size: cover;
+ }
+ 
+ .reveal-modal .columns img{
+	padding-bottom: 20px; 
+ }
+ 
+ .reveal-modal p, .reveal-modal h2, .reveal-modal h3{
+	color: #000; 
+ }
+ 
+ .reveal-modal h2{
+	font-size: 20px;	 
+ }
+ 
+ .modal_link{
+	color: #696a6d;
+	font-size: 20px;
+	margin-top: 20px;
+ }
+ 
+ .lang{
+	margin-left: 50px; 
+	color: #fff;
+ }
+ 
+ .pos-lang {
+    position: absolute;
+    margin-right: 0;
+    float: right;
+ }
+
+ .header{
+	padding-top: 50px; 
+ }
+ 
+ .site_title{
+	text-align: center;
+	padding-bottom: 50px;
+ }
+ 
+ .site_title h1{
+    font-family: "ONYX";
+ 	color: #fff; 
+	font-size: 80px;
+ }
+ 
+ .body_text{
+	text-align: left; 
+ }
+ 
+ .body_text p{
+	color: #fff; 
+	font-size: 26px;
+ }
+ 
+ .timer_title{
+	text-align: center; 
+	padding-top: 40px;
+	padding-bottom: 20px;
+ }
+ 
+ p,h1,h2,h3{
+	color: #fff; 
+ }
+ 
+ .timer .columns{
+	text-align: center; 
+	padding-bottom: 40px;
+ }
+ 
+ .reveal-modal .columns{
+	 text-align: center; 
+ }
+ 
+
+ 
+ .sub_footer{
+	padding-bottom: 79px; 
+ }
+ 
+ .footer{
+	background-color: #1e1e1e;
+	padding-top: 40px;
+	padding-bottom: 15px; 
+	text-align: left;
+ }
+ 
+ a{
+	color: #f7ad19; 
+ }
+ 
+ a:hover{
+	color: #f7ad19;  
+ }
+ 
+  a:active{
+	color: #f7ad19;  
+ }
+ 
+   a:focus{
+	color: #f7ad19;  
+ }
+ 
+ .button{
+	background-color: #f7ad19; 
+ }
+ 
+ .button:hover{
+	background-color: #f7ad19; 	 
+ }
+ 
+  .button:active{
+	background-color: #f7ad19; 	 
+ }
+ 
+   .button:focus{
+	background-color: #f7ad19; 	 
+ }
+ 
+ 
+ input[type="text"] {
+ 	 background-color: transparent;
+}
+
+.button.left{
+	padding: 10px 15px 10px 15px;	
+	background-color: #67686a;
+}
+
+label{
+	color: #fff;
+}
+
+.logo{
+	width: 80px;
+	margin-right: 40px;	
+	margin-top: -5px;
+	margin-left: 50px;
+}
+ 
+ .contact{
+	color: #fff;
+ }
+ 
+ .logo_col{
+	text-align: right; 
+ }
+ 
+ .lang_div {
+  padding-right: 73px;
+}
+ 
+ /********************** 
+640px down
+***********************/
+@media only screen and (max-width: 40em) {  
+
+.body_text p {
+  font-size: 20px;
+}
+
+ .lang_div {
+  padding-right: 20px;
+}
+
+.site_title h1 {
+  font-size: 46px;
+}
+
+.timer .columns {
+  padding:0px;
+}
+
+.timer .columns p{
+  font-size: 10px;
+}
+
+.vote{
+	float: none!important;	
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+body{
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background-size: cover;
+ }
+
+} 
+
+
+/********************** 
+641px -  1024px
+***********************/
+@media only screen and (min-width: 40.063em) and (max-width: 64.1em) {
+	
+.body_text p {
+  font-size: 20px;
+}
+
+ .lang_div {
+  padding-right: 20px;
+}
+
+.site_title h1 {
+  font-size: 46px;
+}
+
+.timer .columns {
+  padding:0px;
+}
+
+.vote{
+	float: none!important;	
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+body{
+   background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://s3-us-west-1.amazonaws.com/milieu-landing/images/DSC_0083-min.jpg)fixed center center;
+   background-size: cover;
+ }
+ 
+ .body_text p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+
+
+/********************** 
+1025px - 1440px
+***********************/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+.body_text p {
+  font-size: 20px;
+}
+
+ .lang_div {
+  padding-right: 20px;
+}
+
+.site_title h1 {
+  font-size: 46px;
+}
+
+.timer .columns {
+  padding:0px;
+}
+
+.button.left {
+  margin-top: 20px;
+}
+
+}
+
+
+/********************** 
+1441px - 1920px
+***********************/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+ body {
+    overflow-y: hidden;
+ }
+
+ input[type="text"] {
+	 width: 41%;
+	 margin-left: 20px;
+	 display: inline-block;
+	 
+ }
+ 
+ label{
+	font-size: 20px;
+}
+
+
+}
+
+@media only screen and (min-width: 1920px) { 
+
+ input[type="text"] {
+	 width: 60%;	 
+ }
+ 
+}
+
+
+
+/********************** 
+1921px up
+***********************/
+@media only screen and (min-width: 120.063em) { 
+
+ input[type="text"] {
+	 width: 60%;
+	 margin-left: 20px;
+	 display: inline-block; 
+ }
+ 
+.footer{
+	position: fixed;
+	bottom: 0px;
+ }
+ 
+ label{
+	font-size: 20px;
+}
+
+}

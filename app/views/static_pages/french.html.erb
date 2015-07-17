@@ -1,135 +1,171 @@
 <!-- <div id="TheIntro">
-	<h1>MILIEU</h1>
+  <h1>MILIEU</h1>
 </div> -->
 
-<div id="back-img1">
-	
-	<div class="row">
-	  
-	  <div class=""></div>
-	  
-	  <div class="vertical-center">
-		<div class="title animated flipInX">
-			<h1><span class="m">M</span>ILIE<span class="u">U</span></h1>
-
-			<h4>
-				<span class="tags">ACCÉDEZ &#183; </span>
-				<span class="tags">PARTICIPEZ &#183; </span>
-				<span class="tags">COLLABOREZ &#183; </span> 
-				<span class="tags">MODÉLISEZ &#183; </span> 
-				<span class="tags">HABILITEZ</span>
-			</h4>
-
-			<hr>
-
-			<button type="button" class="btn btn-hg btn-primary" id="learn-more" data-toggle="modal" data-target=".ex-modal-lg">DÈTAILS</button>
-			
-			<div id="flash">
-				<% if flash[:notice] %>
-					<%= notice %>
-				<% end %>
-				<% if flash[:alert] %>
-					<%= alert %>
-				<% end %>
-			</div>
-
-		</div>
-
-
-	  </div>
-
-	  <div class="">
-
-		
-		
-	      <div id="countdown">
-	        <div class="days"><span id="days"></span> <ins>/</ins><em>jours &#183;</em></div>
-	        <div class="hours"><span id="hours"></span> <ins>/</ins><em>heures &#183;&nbsp;</em></div>
-	        <div class="minutes"><span id="minutes"></span> <ins>/</ins><em>min &#183;</em></div>
-	        <div class="seconds"><span id="seconds"></span><em>sec</em> </div>
-	      </div>
-		
-	
-
-		<div class="logo">
-			<a href="http://atelierruderal.com/" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png" alt="logo-white" id="logo-img"></a>
-		</div>
-		
-
-	  </div>
-
-
-	</div>
-
-
-
-</div>
-
-
-<!-- MODAL -->
-
-<div class="modal fade ex-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-     
-      <div class="modal-body">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<div class="summary">
-			
-			
-			<div class="modal-summary-wrapper">
-			
-				<p class="modal-summary">
-			 		Le problème concernant la conception et la construction de la ville future reste la déconnexion entre les citoyens, les urbanistes et les responsables municipaux . <b>MILIEU</b> facilite la transformation urbaine collaborative et créative en permettant aux gens de faire partie de la ville dans laquelle ils vivent.
-			 	</p>
-
-				<hr>
-
-				<p class="modal-summary">
-					Pour le Prix du Choix du Public du concours Cities of Tomorrow organisé par Ontario’s Big City Mayors,
-ne laissez pas la ville vous glisser entre les doigts. Votez <b>MILIEU</b>.
-					<br>
-					<p class="vote-btn">
-						<a href="http://www.citiesoftomorrow.ca/peoples-choice-award/" target="_blank"><button class="btn btn-primary">VOTEZ MILIEU #80934</button></a>
-					</p>
-
-				</p>
-
-				
-				
-				
-			
-			
-			<hr>
-			
-				
-			<div class="row">
-			<div></div>
-				<%= form_for @user, url: {action: "create"}, html: {class: "form-horizontal"} do |f| %>
-
-					<%= f.text_field :email, placeholder: "EMAIL", id: "inputEmail", class:"form-control" %>				
-					&nbsp;
-		        	<%= f.submit "NOTIFY ME", class: "btn btn-sm btn-primary" %>
-
-			    <% end %>
-
-		    </div>
-		</div>
-
-
-
-
-
+  <div class="row header fullwidth pos-lang">
+    
+      <div class="small-12 columns lang_div">
+      
+        <span class="lang en right"><%= link_to "EN", landing_path %></span>
+          <span class="lang fr right"><%= link_to "FR", french_path %></span>
+          
       </div>
-
-			
-        
-		
-
-    </div>
+    
   </div>
-</div>
+  
+  <div class="row site_title">
+  
+    <div class="small-12 columns">
+    
+      <h1><span class="flipInY">MILIEU</span></h1>
+        
+    </div>
+  
+  </div>
+  
+  <div class="row body_text fullwidth">
+  
+    <div class="small-12 large-8 columns small-centered large-centered">
+    
+      <p>Le problème concernant la conception et la construction de la ville future reste la déconnexion entre les citoyens, les urbanistes et les responsables municipaux . MILIEU facilite la transformation urbaine collaborative et créative en permettant aux gens de faire partie de la ville dans laquelle ils vivent. <a href="#" data-reveal-id="myModal">Learn More</a></p>
+        
+    </div>
+  
+  </div>
 
+  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    
+      <div class="row">
 
+        <div class="small-12 large-4 columns">
+        
+          <img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal1.JPG">
+            <h2>PUBLIC ACCESS</h2>
+            <p>Stay informed of permit applications, public hearings and project developments around your neighbourhood.</p>
+            
+        </div>
+        
+        <div class="small-12 large-4 columns">
+        
+          <img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal2.JPG">
+            <h2>PARTICIPATE</h2>
+            <p>Users notice potential in their neighbourhood and can collaborate in sharing ideas for urban development.</p>
+            
+        </div>
+        
+        <div class="small-12 large-4 columns">
+        
+          <img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal3.JPG">
+            <h2>ENGAGE</h2>
+            <p>Contribute to the discussion by communicating with your community both online and offline.</p>
+            
+        </div>
+      
+      </div>
+      
+      <div class="row">
 
+        <div class="small-12 columns">
+        
+          <a href="#" class="modal_link">Download full report</a>
+            
+        </div>
+        
+      </div>
+      
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      
+  </div>
+      
+  <div class="row timer_title fullwidth">
+  
+    <div class="small-12 large-8 columns small-centered large-centered">
+    
+      <h2>VOTING ENDS IN:</h2>
+        
+    </div>
+  
+  </div>
+  
+  
+   <div class="row timer">
 
+        <div class="small-3 columns">
+        
+            <h2 class="days">28</h2>
+            <p>DAYS</p>
+            
+        </div>
+        
+        <div class="small-3 columns">
+        
+            <h2 class="hours">6</h2>
+            <p>HOURS</p>
+            
+        </div>
+        
+        <div class="small-3 columns">
+        
+            <h2 class="minutes">28</h2>
+            <p>MINUTES</p>
+            
+        </div>
+        
+        <div class="small-3 columns">
+        
+            <h2 class="seconds">28</h2>
+            <p>SECONDS</p>
+            
+        </div>
+      
+  </div>
+  
+  <div class="row body_text sub_footer fullwidth">
+  
+    <div class="small-12 large-8 columns small-centered large-centered">
+    
+    <div class="row no_padding">
+    
+      <div class="small-12 large-9 columns no_padding">
+        
+        <p>Go to the <a href="http://www.citiesoftomorrow.ca/">People's Choice Awards</a> hosted by Ontario's Big City Mayor's to learn more and vote for Milieu</p>
+        
+      </div>
+        
+      <div class="small-12 large-3 columns no_padding">  
+        
+          <a href="http://www.citiesoftomorrow.ca/peoples-choice-award/" class="button right vote">Vote Milieu #80934</a>
+        
+        </div>
+        
+      </div>  
+      
+     </div> 
+  
+  </div>  
+  
+  
+  <div class="row fullwidth no_padding footer">  
+  
+    <div class="small-12 large-5 columns">
+    
+      <label>Get notified when Milieu is live
+        <input type="text" placeholder="EMAIL ADDRESS" />
+      </label>
+      
+    </div> 
+    
+    <div class="small-12 large-3 columns no_padding">
+    
+        <a href="#" class="button left">NOTIFY ME</a> 
+             
+    </div>
+      
+    <div class="small-12 large-4 columns logo_col no_padding">
+    
+        <a href="#" class="contact">CONTACT</a>
+    <a href="http://www.atelierruderal.com" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png" class="logo"></a>
+           
+    </div>   
+      
+  </div>
