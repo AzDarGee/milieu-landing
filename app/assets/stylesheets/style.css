@@ -185,8 +185,8 @@ label{
   font-size: 20px;
 }
 
- .lang_div {
-  padding-right: 20px;
+.lang_div {
+  padding-right: 8px;
 }
 
 .site_title h1 {
@@ -199,6 +199,15 @@ label{
 
 .timer .columns p{
   font-size: 10px;
+}
+
+.lang_div {
+    padding-right: 10px;
+}
+
+.lang {
+    margin-left: 50px; 
+    color: #fff;
 }
 
 .vote{
