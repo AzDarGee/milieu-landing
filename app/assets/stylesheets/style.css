@@ -208,6 +208,8 @@ label{
 .lang {
     margin-left: 50px; 
     color: #fff;
+    position: relative;
+    z-index: 1000;
 }
 
 .vote{
