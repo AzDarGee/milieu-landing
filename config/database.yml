@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
-  database: milieu-landing
-  username: postgres
-  password: postgres
+  database: milieu
+  username: adminshwtagq
+  password: CepAPzQHR_aH
   host: localhost
 
 development:
@@ -15,3 +15,8 @@ test:
 production:
   <<: *default
   port: 5432
+
+
+  #   database: milieu-landing
+  # username: postgres
+  # password: postgres
