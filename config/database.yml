@@ -20,3 +20,7 @@ production:
   #   database: milieu-landing
   # username: postgres
   # password: postgres
+
+  # Root User: adminc6hpt3t
+  #  Root Password: RrTA4qHwsYvD
+  #  Database Name: milieu
