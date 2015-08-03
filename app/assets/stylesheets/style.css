@@ -62,10 +62,12 @@ body{
     font-family: "ONYX";
  	color: #fff; 
 	font-size: 80px;
+    padding: 0;
+    margin: 0.4em;
  }
  
  .body_text{
-	text-align: left; 
+	text-align: left;
  }
  
  .body_text p{
@@ -174,6 +176,12 @@ label{
  .lang_div {
   padding-right: 73px;
 }
+
+iframe {
+    margin-top: -40px;
+    width: 853px;
+    height: 480px;
+}
  
  /********************** 
 640px down
@@ -225,6 +233,12 @@ body{
    overflow-y: scroll;
  }
 
+iframe {
+    margin-top: 20px;
+    width: 450px;
+    height: 253px;
+}
+
 } 
 
 
@@ -266,6 +280,12 @@ body{
  .body_text p {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+iframe {
+    margin-top: -40px;
+    width: 500px;
+    height: 281px;
 }
 
 }
