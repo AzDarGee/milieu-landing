@@ -1,116 +1,156 @@
-<!-- <div id="TheIntro">
-	<h1>MILIEU</h1>
-</div> -->
-
-  <div class="row header fullwidth pos-lang">
-    
-    	<div class="small-12 columns lang_div">
-      
-      	<span class="lang en right"><%= link_to "EN", landing_path %></span>
-          <span class="lang fr right"><%= link_to "FR", french_path %></span>
-          
-      </div>
-    
-  </div>
-  
-  <div class="row site_title">
-  
-  	<div class="small-12 columns">
-    
-    	<h1><span class="flipInY">Milieu</span></h1>
-        
+<!-- navigation panel -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">milieu.io</a>
     </div>
-  
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#information">Information</a></li>
+        <li><a href="#google_map">Contact</a></li>
+        <li><a href="https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/">Back to tutorial</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- first section - Home -->
+<div id="home" class="home">
+  <div class="text-vcenter">
+    <h1>Lets Build a Better City Together</h1>
+    <h3>Empowering people | Democratizing city planning | Crowdsourcing urban development</h3>
+    <a href="#about" class="btn btn-danger btn-lg more-info-btn">Find out more ...</a>
   </div>
-  
-  <div class="row body_text fullwidth">
-  
-  	<div class="small-12 large-8 columns small-centered large-centered">
-    
-    	<p>The problem in designing and constructing the city of tomorrow remains the disconnection between people, urban developers and city officials. Milieu facilitates collaborative and creative urban transformation and empowers people to be part of the city in which they live. <a href="#" data-reveal-id="myModal">Learn More</a></p>
-        
+</div>
+<!-- /first section -->
+
+<!-- second section - About -->
+<div id="about" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <div class="col-sm-6 text-center">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
+      </div>
     </div>
-  
   </div>
+</div>
+<!-- /second section -->
 
-  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-    
-      <div class="row">
-
-        <div class="small-12 large-4 columns">
-        
-        	<img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal1.JPG">
-            <h2>PUBLIC ACCESS</h2>
-            <p>Stay informed of permit applications, public hearings and project developments around your neighbourhood.</p>
-            
-        </div>
-        
-        <div class="small-12 large-4 columns">
-        
-        	<img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal2.JPG">
-            <h2>PARTICIPATE</h2>
-            <p>Users notice potential in their neighbourhood and can collaborate in sharing ideas for urban development.</p>
-            
-        </div>
-        
-        <div class="small-12 large-4 columns">
-        
-        	<img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/modal3.JPG">
-            <h2>ENGAGE</h2>
-            <p>Contribute to the discussion by communicating with your community both online and offline.</p>
-            
-        </div>
-      
+<!-- third section - Services -->
+<div id="services" class="pad-section">
+  <div class="container">
+    <h2 class="text-center">Real - Time Data in Ottawa</h2> <hr />
+    <div class="row text-center">
+      <div class="col-sm-3 col-xs-6">
+      <%= image_tag("planned.svg", class: "svg") %>
+        <h1>349</h1>
+        <h4>Planned Urban Development</h4>
+        <p>new applications</p>
       </div>
-      
-      <div class="row">
-
-        <div class="small-12 columns">
-        
-        	<a href="https://drive.google.com/file/d/0B90IsIEh3GGfN1Uxa2VPN05vSnc/view?usp=sharing" target="_blank" class="modal_link">Download summary</a>
-            
-        </div>
-        
+      <div class="col-sm-3 col-xs-6">
+        <%= image_tag("const.svg", class: "svg") %>
+        <h1>89</h1>
+        <h4>Under Construction</h4>
+        <p>developments underway</p>
       </div>
-      
-      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-      
-  </div>
-      
-  <div class="row fullwidth">
-  
-  	<div class="small-12 large-8 columns small-centered large-centered">
-    
-    	<!-- <iframe src="https://www.youtube.com/embed/hID0CEYMIog?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-
-      <iframe src="https://www.youtube.com/embed/hID0CEYMIog?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  
+      <div class="col-sm-3 col-xs-6">
+        <%= image_tag("vacant.svg", class: "svg") %>
+        <h1>11</h1>
+        <h4>Vacant & Derlict</h4>
+        <p>sites awaiting public ideas</p>
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        <%= image_tag("hot.svg", class: "svg") %>
+        <h1>21</h1>
+        <h4>Contested</h4>
+        <p>sites 'hotly' being discussed</p>
+      </div>
     </div>
-  
   </div>
-   
-  
-  
-  <div class="row fullwidth no_padding footer">  
-  
-  	<div class="small-12 large-5 columns">
-    
-    	 <%= form_for @user, url: { action: "create" } do |f| %>
-        <label>Get notified when Milieu is live
-          <%= f.text_field :email, placeholder: "EMAIL ADDRESS" %> 
-        </label>
-      </div> 
-      
-      <div class="small-12 large-3 columns no_padding">
-          <%= f.submit "NOTIFY ME", class: "button left" %>
+</div>
+<!-- /third section -->
+
+<!-- fourth section - Information -->
+<div id="information" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Additional information</h2>
+          </div>
+          <div class="panel-body lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+          </div>
+        </div>
       </div>
-    <% end %>
-      
-    <div class="small-12 large-4 columns logo_col no_padding">
-    
-      	<a href="mailto:contact@atelierruderal.com" class="contact">CONTACT</a>
-		<a href="http://www.atelierruderal.com" target="_blank"><img src="https://s3-us-west-1.amazonaws.com/milieu-landing/images/ar5white-01-01.png" class="logo"></a>
-           
-    </div>   
-      
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Additional information</h2>
+          </div>
+          <div class="panel-body lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+<!-- /fourth section -->
+
+<!-- fifth section -->
+<div id="services" class="pad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="btn-group">
+          <button class="btn btn-inverse dropdown-toggle pick-neighbourhoods" type="button" data-toggle="dropdown">
+            Pick Your Neighbourhood <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+            <li><a href="#"><i class="glyphicon glyphicon-map-marker"></i> Near me</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Kanata</a></li>
+            <li><a href="#">The Glebe</a></li>
+            <li><a href="#">Westboro</a></li>
+            <li><a href="#">Rideau</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /fifth section -->
+
+<!-- google map -->
+<div id="google_map"></div>
+<!-- /google map -->
+
+<!-- footer -->
+<footer>
+  <hr />
+  <div class="container">
+    <p class="text-right">Copyright &copy; Your Company 2014</p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script>
+
+</script>

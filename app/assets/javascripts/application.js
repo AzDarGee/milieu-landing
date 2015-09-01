@@ -11,10 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require foundation
 //= require turbolinks
-//= require_self
 //= require_tree .
+//= require_self
 
-$(function(){ $(document).foundation(); });
+
+$(document).on("ready page:load",function() {
+	$.localScroll()
+});

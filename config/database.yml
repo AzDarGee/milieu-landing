@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
   database: milieu
-  username: adminshwtagq
-  password: CepAPzQHR_aH
+  username: postgres
+  password: postgres
   host: localhost
 
 development:
@@ -18,9 +18,11 @@ production:
 
 
   #   database: milieu-landing
-  # username: postgres
-  # password: postgres
+  # 
 
   # Root User: adminc6hpt3t
   #  Root Password: RrTA4qHwsYvD
   #  Database Name: milieu
+
+  # username: adminshwtagq
+  # password: CepAPzQHR_aH

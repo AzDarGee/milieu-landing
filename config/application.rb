@@ -23,6 +23,13 @@ module MilieuLanding
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Get Glyphicons to work
+    config.assets.precompile += %w( /assets/fonts/glyphicons/flat-ui-icons-regular.woff )
+    
+    # Get Fonts to work
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
+    config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff|csv)$)
+
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     
   end

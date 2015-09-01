@@ -11,20 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150701045406) do
+ActiveRecord::Schema.define(version: 20150823210317) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "addresses", force: :cascade do |t|
+    t.integer  "devapp_id"
+    t.float    "lat"
+    t.float    "lon"
+    t.string   "addr"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "comments", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
     t.integer  "user_id"
-    t.text     "text"
-    t.integer  "up_votes"
-    t.integer  "down_votes"
-    t.integer  "total_votes"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "site_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "devapps", force: :cascade do |t|
+    t.string   "appid"
+    t.string   "devid"
+    t.string   "apptype"
+    t.integer  "ward"
+    t.datetime "receiveddate"
+    t.text     "description"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "sites", force: :cascade do |t|
@@ -37,10 +55,20 @@ ActiveRecord::Schema.define(version: 20150701045406) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "type_of_property"
+    t.string   "image"
   end
 
   create_table "static_pages", force: :cascade do |t|
     t.string   "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.integer  "devapp_id"
+    t.datetime "statusdate"
+    t.string   "status"
+    t.datetime "created"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
