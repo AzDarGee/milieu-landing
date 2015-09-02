@@ -17,8 +17,7 @@
         <li><a href="#home">Home</a></li>
         <!-- <li><a href="#about">Why</a></li> -->
         <li><a href="#services">Data</a></li>
-        <li><a href="#information">What</a></li>
-        <li><a href="#google_map">Where</a></li>
+        <li><a href="#information">Locate Me</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -27,7 +26,7 @@
 <!-- first section - Home -->
 <div id="home" class="home">
   <div class="text-vcenter">
-    <h1>Lets Build a Better City Together</h1>
+    <h1>Build a Better City Together</h1>
     <h3>Empowering people | Democratizing city planning | Crowd-sourcing urban development</h3>
     <a href="#about" class="btn btn-danger btn-lg more-info-btn">Find out more ...</a>
   </div>
@@ -50,10 +49,13 @@
 </div> -->
 <!-- /second section -->
 
+
+
+
 <!-- third section - Services -->
 <div id="services" class="pad-section">
   <div class="container">
-    <h2 class="text-center">Developments in Ottawa</h2> <hr />
+    <h2 class="text-center">What's happening in your neighbourhood?</h2> <hr />
     <div class="row text-center">
       <div class="col-sm-3 col-xs-6">
       <%= image_tag("planned.svg", class: "svg") %>
@@ -86,28 +88,33 @@
 
 <!-- fourth section - Information -->
 <div id="information" class="pad-section">
-  <div class="container">
+  <div class="container" style="padding-top: 100px">
     <div class="row">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Additional information</h2>
-          </div>
+      <div class="col-sm-12">
+        <div class="panel panel-info">
+          
           <div class="panel-body lead">
-            BRUH
+           
+                  <div class="col-sm-3">
+                    <%= image_tag("public-2.svg", size: "120x120") %>
+                    <h6>Public Access - A hub for real-time access on urban development and planning information in your city</h6>
+                  </div>
+                  <div class="col-sm-3">
+                    <%= image_tag("inform-2.svg", size: "120x120") %>
+                    <h6>Inform - Stay informed of public hearings and project developments in your neighbourhood</h6>
+                  </div>
+                  <div class="col-sm-3">
+                    <%= image_tag("participate-2.svg", size: "120x120") %>
+                    <h6>Participate - Discuss and share ideas on urban development and planning with your community</h6>
+                  </div>
+                   <div class="col-sm-3">
+                    <%= image_tag("analytics-2.svg", size: "120x120") %>
+                    <h6>Analytics - Real-time data generated from public consultation for multiple stakeholders</h6>
+                  </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Additional information</h2>
-          </div>
-          <div class="panel-body lead">
-            YO
-          </div>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -120,7 +127,7 @@
       <div class="col-sm-12 text-center">
         <div class="btn-group">
           <button class="btn btn-inverse dropdown-toggle pick-neighbourhoods" type="button" data-toggle="dropdown">
-            Pick Your Neighbourhood <span class="caret"></span>
+            Choose Your Neighbourhood <span class="caret"></span>
           </button>
           <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
             <li><a href="#"><i class="glyphicon glyphicon-map-marker"></i> Near me</a></li>
