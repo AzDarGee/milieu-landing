@@ -511,11 +511,11 @@ html, body {
     margin: 0;
   }
   .pick-neighbourhoods {
-    width: 450px;
+    width: 545px;
     font-size: 1.8em;
   }
   .dropdown-menu > li:first-child > a:first-child {
-    width: 450px;
+    width: 545px;
     font-size: 1.5em;
   }
   .dropdown-menu > li > a {
@@ -558,6 +558,22 @@ html, body {
   height: 500px;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
 footer {
   padding: 20px 0;
   background-color: rgb(47, 68, 89);
@@ -583,7 +599,8 @@ footer .glyphicon:hover {
     font-size: 2em;
     font-weight: 400;
     // margin-top: -0.5em;
-    padding: 0 10px 0 45px;
+    margin-top: 40px;
+    padding: 0 10px 0 5px;
     display: table;
     max-width: 385px;
     background-color: rgba(0,0,0,0.8);
@@ -599,7 +616,7 @@ footer .glyphicon:hover {
     border-radius: 10px;
   }
   .arrow {
-    padding-top: 80px;
+    padding-top: 20px;
     font-size: 4em;
     color: rgba(0,0,0,0.6);
     -moz-animation: animatedBackground 2s infinite linear;
@@ -622,11 +639,11 @@ footer .glyphicon:hover {
       font-size: 1.4em;
     }
     .pick-neighbourhoods {
-      width: 400px;
-      font-size: 1.2em;
+      width: 360px;
+      font-size: 1em;
     }
     .dropdown-menu > li:first-child > a:first-child {
-      width: 400px;
+      width: 360px;
       font-size: 1.2em;
     }
     .dropdown-menu > li > a {
