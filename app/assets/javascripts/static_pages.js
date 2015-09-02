@@ -36,4 +36,6 @@ $(document).on("ready page:load", function() {
         infowindow.close();
     });
 
+	
+
 });

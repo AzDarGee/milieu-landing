@@ -433,6 +433,72 @@ html, body {
 	font-size: 2em;
 }
 
+.arrow {
+  padding-top: 145px;
+  font-size: 5em;
+  color: rgba(0,0,0,0.6);
+  -moz-animation: animatedBackground 2s infinite linear;
+  -o-animation: animatedBackground 2s infinite linear;
+  -webkit-animation: animatedBackground 2s infinite linear;
+  animation: animatedBackground 2s infinite linear;
+}
+
+@-moz-keyframes animatedBackground {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+@-webkit-keyframes animatedBackground {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+@-o-keyframes animatedBackground {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+@-ms-keyframes animatedBackground {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+@keyframes animatedBackground {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+
 #about {
   width: inherit;
 }
