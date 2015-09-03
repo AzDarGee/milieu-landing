@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-01">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -12,11 +12,12 @@
       <a class="navbar-brand" href="#">milieu.io</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+    <div class="collapse navbar-collapse" id="navbar-collapse-01">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Data</a></li>
-        <li><a href="#information">Locate Me</a></li>
+        <li><a href="#google_map">Contact</a></li>
+        <li><a href="#english" style="display: inline-block;">EN</a>|<a href="#french" style="display: inline-block;">FR</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -25,108 +26,58 @@
 <!-- first section - Home -->
 <div id="home" class="home">
   <div class="text-vcenter">
-    <h1>Build a Better City Together</h1>
-    <h3>Empowering people | Democratizing city planning | Crowd-sourcing urban development</h3>
+<!--     <h1>Building a Better City Together</h1> -->
+    <!-- <h3>Empowering People | Democratizing City Planning | Crowd-sourcing Urban Development</h3> -->
     <a href="#services"><i class="glyphicon glyphicon-circle-arrow-down arrow"></i></a>
   </div>
 </div>
 <!-- /first section -->
 
-<!-- second section - About -->
-<!-- <div id="about" class="pad-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <%= image_tag("app_notification.png") %>
-      </div>
-      <div class="col-sm-6 text-center">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!-- /second section -->
-
-
-
-
 <!-- third section - Services -->
 <div id="services" class="pad-section">
+  <i class="glyphicon glyphicon-menu-down close-data"></i>
   <div class="container">
-    <h2 class="text-center">What's happening in your neighbourhood?</h2> <hr />
+    <h1 class="text-center">BUILDING A BETTER CITY TOGETHER</h1>
+    <h6 class="text-center">Demoncratizing City Planning</h6>
     <div class="row text-center">
-      <div class="col-sm-3 col-xs-6">
-      <%= image_tag("planned.svg", class: "svg") %>
-        <h1>349</h1>
-        <h4>Planned Urban Developments</h4>
+      <div class="col-sm-2 col-xs-12 col-sm-offset-1">
+      <%= image_tag("planned.svg", size: "150x150") %>
+        <h4>PLANNED URBAN DEVELOPMENT</h4>
+        <h3>349</h3>
         <p>new applications</p>
       </div>
-      <div class="col-sm-3 col-xs-6">
-        <%= image_tag("const.svg", class: "svg") %>
-        <h1>89</h1>
-        <h4>Under Construction</h4>
+      <div class="col-sm-2 col-xs-12">
+        <%= image_tag("discussion.svg", size: "150x150") %>
+        <h4>ACTIVE DISCUSSIONS</h4>
+        <h3>23</h3>
+        <p>lively discussions</p>
+      </div>
+      <div class="col-sm-2 col-xs-12">
+        <%= image_tag("const.svg", size: "150x150") %>
+        <h4>UNDER CONSTRUCTION</h4>
+        <h3>73</h3>
         <p>developments underway</p>
       </div>
-      <div class="col-sm-3 col-xs-6">
-        <%= image_tag("vacant.svg", class: "svg") %>
-        <h1>11</h1>
-        <h4>Vacant & Derlict</h4>
+      <div class="col-sm-2 col-xs-12">
+        <%= image_tag("vacant.svg", size: "150x150") %>
+        <h4>VACANT & DERELICT</h4>
+        <h3>11</h3>
         <p>sites awaiting public ideas</p>
       </div>
-      <div class="col-sm-3 col-xs-6">
-        <%= image_tag("hot.svg", class: "svg") %>
-        <h1>21</h1>
-        <h4>Contested</h4>
-        <p>sites 'hotly' being discussed</p>
+      <div class="col-sm-2 col-xs-12">
+        <%= image_tag("event.svg", size: "150x150") %>
+        <h4>EVENT CALENDER</h4>
+        <h3>18</h3>
+        <p>community events</p>
       </div>
     </div>
-  </div>
-</div>
-<!-- /third section -->
-
-<!-- fourth section - Information -->
-<div id="information" class="pad-section">
-  <div class="container" style="padding-top: 100px">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="panel panel-info">
-          
-          <div class="panel-body lead">
-           
-                  <div class="col-sm-3">
-                    <%= image_tag("public-2.svg", size: "180x180") %>
-                    <h6>Public Access - A hub for real-time access on urban development and planning information in your city</h6>
-                  </div>
-                  <div class="col-sm-3">
-                    <%= image_tag("inform-2.svg", size: "180x180") %>
-                    <h6>Inform - Stay informed of public hearings and project developments in your neighbourhood</h6>
-                  </div>
-                  <div class="col-sm-3">
-                    <%= image_tag("participate-2.svg", size: "180x180") %>
-                    <h6>Participate - Discuss and share ideas on urban development and planning with your community</h6>
-                  </div>
-                   <div class="col-sm-3">
-                    <%= image_tag("analytics-2.svg", size: "180x180") %>
-                    <h6>Analytics - Real-time data generated from public consultation for multiple stakeholders</h6>
-                  </div>
-          </div>
-        </div>
-      </div>
       
-    </div>
-  </div>
-</div>
-<!-- /fourth section -->
-
-<!-- fifth section -->
-<div id="services" class="pad-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <h2 class="dropdown-text">WHAT'S IN YOUR NEIGHBOURHOOD?</h2>
         <div class="btn-group">
           <button class="btn btn-inverse dropdown-toggle pick-neighbourhoods" type="button" data-toggle="dropdown">
-            Choose Your Neighbourhood <span class="caret"></span>
+            - select -
           </button>
           <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
             <li><a href="#"><i class="glyphicon glyphicon-map-marker"></i> Near me</a></li>
@@ -139,9 +90,11 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </div>
-<!-- /fifth section -->
+<!-- /third section -->
 
 <!-- google map -->
 <div id="google_map"></div>
@@ -152,7 +105,6 @@
   <div class="container-fluid">
     <p class="text-center">SOCIAL MEDIA ICONS</p>
     <p class="text-right">&copy; Milieu 2015</p>
-
   </div>
 </footer>
 <!-- /footer -->

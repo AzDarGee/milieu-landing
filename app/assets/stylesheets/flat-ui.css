@@ -51,12 +51,13 @@
   src: url('lato-regular.eot');
   src: url('lato-regular.eot?#iefix') format('embedded-opentype'), url('lato-regular.woff') format('woff'), url('lato-regular.ttf') format('truetype'), url('lato-regular.svg#latoregular') format('svg');
   }
+  */
 @font-face {
   font-family: 'Flat-UI-Icons';
 
-  src: url('flat-ui-icons-regular.eot');
-  src: url('flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('flat-ui-icons-regular.woff') format('woff'), url('flat-ui-icons-regular.ttf') format('truetype'), url('flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
-  }*/
+  src: url('/assets/flat-ui-icons-regular.eot');
+  src: url('/assets/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('/assets/flat-ui-icons-regular.woff') format('woff'), url('/assets/flat-ui-icons-regular.ttf') format('truetype'), url('/assets/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+  }
 [class^="fui-"],
 [class*="fui-"] {
   /*font-family: 'Flat-UI-Icons';*/
