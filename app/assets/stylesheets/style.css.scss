@@ -549,7 +549,7 @@ html, body {
     letter-spacing: 1px;
   }
   h6 {
-    padding-bottom: 55px;
+    padding-bottom: 0px;
   }
   .dropdown-text {
     font-family: Raleway;
@@ -681,6 +681,9 @@ footer .glyphicon:hover {
     p {
       border-bottom: 1px solid white;
       padding-bottom: 10px;
+    }
+    .dropdown-text {
+      font-size: 1.5em;
     }
   }
 
