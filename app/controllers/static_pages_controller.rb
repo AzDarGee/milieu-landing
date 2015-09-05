@@ -21,6 +21,6 @@ class StaticPagesController < ApplicationController
 
   private
   	def static_pages_params
-  		params.require(:static_page).permit(:email)
+  		params.require(:static_page).permit(:name,:email,:number,:comment)
   	end
 end

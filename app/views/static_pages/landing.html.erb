@@ -9,36 +9,34 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">milieu.io</a>
+      <a class="navbar-brand" href="/">
+        <%= image_tag("milieulogo-01.svg", size: "100x30", class: "logo") %>
+      </a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Data</a></li>
-        <li><a href="#google_map">Contact</a></li>
-        <li><a href="#english" style="display: inline-block;">EN</a>|<a href="#french" style="display: inline-block;">FR</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/" style="display: inline-block;">EN</a>|<a href="/french" style="display: inline-block;">FR</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 <!-- first section - Home -->
 <div id="home" class="home">
   <div class="text-vcenter">
-<!--     <h1>Building a Better City Together</h1> -->
-    <!-- <h3>Empowering People | Democratizing City Planning | Crowd-sourcing Urban Development</h3> -->
-    <!-- <a href="#services"><i class="glyphicon glyphicon-circle-arrow-down arrow"></i></a> -->
   </div>
 </div>
 <!-- /first section -->
 
-<!-- third section - Services -->
+<!-- second section - Services -->
 <div id="services" class="pad-section">
   <i class="glyphicon glyphicon-menu-down close-data"></i>
   <div class="container">
-    <h1 class="text-center">BUILDING A BETTER CITY TOGETHER</h1>
-    <h6 class="text-center">Demoncratizing City Planning</h6>
+    <h1 class="text-center main-title">BUILDING A BETTER CITY TOGETHER</h1>
+    <!-- <h6 class="text-center">Demoncratizing City Planning</h6> -->
     <div class="row text-center">
       <div class="col-sm-2 col-xs-12 col-sm-offset-1">
       <%= image_tag("planned.svg", size: "150x150") %>
@@ -90,23 +88,81 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
-<!-- /third section -->
+<!-- /second section -->
 
-<!-- google map -->
-<div id="google_map"></div>
-<!-- /google map -->
+<section id="contact" class="contact alt">    
+    <div class="con-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 item">
+                    <h4>Let's Connect</h4>
+                    <p>We can empower you to take charge of the environment around you. Ask us how!</p>
 
-<!-- footer -->
-<footer>
-  <div class="container-fluid">
-    <p class="text-right">&copy; Milieu 2015</p>
+                    <ul>
+                        <li><i class="icon_house"></i>Where: Downtown Core, Ottawa, Ontario</li>
+                        <li><i class="icon_phone"></i>Phone: (613) 914-7655</li>
+                        <li><i class="icon_mail"></i>Email: contact@atelierruderal.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-8 item">
+                    <%= form_for @user, url: { action: "create" } do |f| %>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <%= f.text_field :name, placeholder: "Name" %>
+                                <%= f.text_field :email, placeholder: "Email" %>
+                                <%= f.text_field :number, placeholder: "Telephone" %>
+                            </div>
+                             <div class="col-sm-8">
+                                <%= f.text_area :comment, placeholder: "Message" %>
+                                <%= f.submit "Send", class: "btn btn-primary" %>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="clearfix">
+          <li>
+            <a href="">
+              <i><%= image_tag("facebook-square.svg", size: "50x50") %></i> 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i><%= image_tag("twitter.svg", size: "50x50") %></i> 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i><%= image_tag("youtube.svg", size: "50x50") %></i> 
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i><%= image_tag("linkedin.svg", size: "50x50") %></i>  
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i><%= image_tag("instagram.svg", size: "50x50") %></i> 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</footer>
-<!-- /footer -->
+  <p class="copyright">&copy; <a href="http://www.atelierruderal.com" target="_blank"><b>aR5</b></a></p>
+</footer> 
 
 <script>
 
